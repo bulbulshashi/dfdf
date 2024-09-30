@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>C#ShirT</title>
+ <style>*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+background-color: white;
+
+
+}
+
+nav{
+ width: 100%;
+  height: 50px;
+  background:linear-gradient(100deg,navy,rgb(29, 29, 48));
+  display:flex;
+  justify-content: space-around;
+  border: 0.02px solid black;
+  align-items: center;
+  position: fixed;
+  z-index: 100;
+  
+}
+.all{
+  width: 100%;
+}
+.ct{
+  width: 50px;
+  height: 50px;
+  border-color: black;
+  border-width: 2px;
+  border-radius: 100%;
+}
+.hac{
+  display: flex;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.home a{
+  border:.2px solid #8e8c4a;
+  background:linear-gradient(120deg,navy,rgb(12, 12, 19));
+  color: white;
+  max-width: 130px;
+  min-width: auto;
+  font-size: 20px;
+  padding: 5px;
+  cursor: pointer;
+ text-decoration: none;
+  border-radius: 7px;
+}
+
+.about{
+  border:.2px solid #8e8c4a;
+  background:linear-gradient(120deg,navy,rgb(12, 12, 19));
+  color: white;
+  max-width: 130px;
+  min-width: auto;
+  font-size: 20px;
+  padding: 5px;
+  cursor: pointer;
+  margin-left: 20px;
+  border-radius: 7px;
+}
+
+
+.cart{
+width: 47px;
+height: 47px;
+border-radius: 50%;
+border: 2px solid  #8e8c4a ;
+padding: 0;
+}
+.cartimg{
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: 2px solid  #8e8c4a ;
+}
+.search{
+  display: flex;
+
+  align-items: center;
+}
+
+.cross{
+  position: absolute;
+  margin-left: 220px;
+  width: 25px;
+  height: 25px;
+  border: none;
+  font-size: 20px;
+  text-align: center;
+  border:none;
+  background-color: rgb(194, 194, 255);
+  color: gray;
+  border-radius: 10px;
+}
+
+
+.search img{
+width: 34px;
+height: 34px;
+border: 2px solid  #8e8c4a ;
+border-radius: 3px;
+border-top-left-radius: 0px;
+border-bottom-left-radius: 0px;
+}
+.srcBtn{
+  width: 36px;
+  height: 36px;
+  border: 2px solid  #8e8c4a ;
+  border-radius: 3px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+
+}
+
+#search-bar{
+  width: 250px;
+  padding: 7px;
+  border:1px solid #8e8c4a;
+  background:linear-gradient(120deg,white,rgb(194, 194, 255));
+  color:black;
+  font-size: 16px;
+  border-radius: 3px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  
+}
+
+
+
+.shirtB{
+  width: 250px;
+  height: 360px;
+  background-color:rgb(0, 0, 0);
+  margin: none;
+  position: absolute;
+  margin-top: 100px;
+  margin-left: 230px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border: 1px solid black;
+
+}
+.neck{
+  background-color:white;
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  position: absolute;
+  margin-left: 307px;
+  margin-top: 45px;
+  border-bottom: 2px solid black;
+}
+.hand1{
+  width: 67px;
+  height: 125px;
+  position: absolute;
+  margin-top: 107px;
+  margin-left: 460px;
+  background-color: rgb(0, 0, 0);
+  transform: rotate(140deg);
+  border-radius: 3px;
+    border: 1px solid black;
+}
+.hand2{
+  width: 67px;
+  height: 125px;
+  position: absolute;
+  margin-top: 107px;
+  margin-left: 184px;
+  background-color: rgb(0, 0, 0);
+  transform: rotate(40deg);
+  border-radius: 3px;
+  border: 1px solid black;
+}
+.shape1{
+  width: 60px;
+  height: 130px;
+  position: absolute;
+  background-color: rgb(0, 0, 0);
+  margin-top: 102px;
+  margin-left: 233px;
+}
+.shape2{
+  width: 60px;
+  height: 130px;
+  position: absolute;
+  background-color:rgb(0, 0, 0);
+  margin-top: 102px;
+  margin-left: 419px;
+}
+.imgBody{
+  background-color: black;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  margin-top: 180px;
+  margin-left: 283px;
+}
+.codesec{
+  position: absolute;
+  width: 165px;
+  background:linear-gradient(120deg,white,rgb(194, 194, 255));
+  margin-top: 400px;
+  margin-left: 510px;
+  color: darkcyan;
+  font-weight: 800;
+  font-size: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+
+}
+.codesec button{
+  width: 32px;
+  height: 32px;
+  margin-right: 2px;
+  border: none;
+  }
+.codesec img{
+width: 30px;
+height: 30px;
+}
+.codesec img:hover{
+  width: 30px;
+  height: 30px;
+  border: 1px solid navy ;
+  border-radius: 3px;
+  }
+  .codesec img:active{
+    width: 30px;
+    height: 30px;
+    border:none ;
+    border-radius: 3px;
+    opacity: 0.5;
+    }
+    
+
+#inputcode{
+  display: none;
+}
+
+
+
+.imgC{
+  width: 150px;
+  height: 150px;
+ border-radius: 2px;
+}
+.colors{
+  width: 345px;
+  height: 60px;
+  background-color:white;
+  margin-top: 490px;
+  margin-left: 52px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+}
+
+.red{
+  padding: 10px;
+  margin-left: 6px;
+  width: 100px;
+  border-radius: 7px;
+  font-size: 20px;
+  background-color: red;
+  color: rgb(255, 255, 255);
+}
+.green{
+  padding: 10px;
+  margin-left: 6px;
+  width: 100px;
+  border-radius: 7px;
+  font-size: 20px;
+  background-color: green;
+  color: white;
+}
+.navy{
+  padding: 10px;
+  margin-left: 6px;
+  width: 100px;
+  border-radius: 7px;
+  font-size: 20px;
+  background-color:navy;
+  color: white;
+}
+.white{
+  padding: 10px;
+  margin-left: 6px;
+  width: 100px;
+  border-radius: 7px;
+  font-size: 20px;
+  background-color: white;
+  color: black;
+
+}
+.black{
+  padding: 10px;
+  margin-left: 6px;
+  width: 100px;
+  border-radius: 7px;
+  font-size: 20px;
+  background-color: black;
+  color:white;
+}
+.brown{
+  padding: 10px;
+  margin-left: 6px;
+  width: 100px;
+  border-radius: 7px;
+  font-size: 20px;
+  background-color: brown;
+  color:white;  
+}
+.gray{
+  padding: 10px;
+  margin-left: 6px;
+  width: 100px;
+  border-radius: 7px;
+  font-size: 20px;
+  background-color: gray;
+  color:white;
+  
+}
+.glry{
+
+
+  margin-top: 140px;
+  margin-left: 700px;
+  position: absolute;
+}
+.glry button{
+width: 80px;
+height: 80px;
+border-radius: 10px;
+}
+.glry img{
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  }
+.a1{
+  width: 315px;
+  height: 100px;
+  background: linear-gradient(100deg, navy , black);
+  border: 2px solid aqua;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+.a2{
+    width: 315px;
+    height: 100px;
+    background: linear-gradient(100deg, navy , black);
+    border: 2px solid aqua;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    margin-right: 20px;
+    
+}
+.a3{
+  width: 315px;
+    height: 100px;
+    background: linear-gradient(100deg, navy , black);
+    border: 2px solid aqua;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    margin-right: 20px;
+  
+}
+.a4{
+  width: 315px;
+    height: 100px;
+    background: linear-gradient(100deg, navy , black);
+    border: 2px solid aqua;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+.a5{
+  width: 968px;
+    height: 100px;
+    background: linear-gradient(100deg, navy , black);
+    border: 2px solid aqua;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    margin-right: 20px;
+    position: absolute;
+    margin-top: 600px;
+    margin-left: 50px;
+}
+.a5 button{
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  }
+  .a5 img{
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+
+    }
+.bot{
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  margin-top: 1100px;
+  background:linear-gradient(100deg,navy,rgb(29, 29, 48));
+ align-items: center;
+  color: white;
+  font-size: 30px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+
+
+  
+}
+
+   </style>
+</head>
+<body>
+  
+
+<nav>
+<div class="logo"><img class="ct" src="images/240_F_398219236_3fgvgb5LS4jDfkzajmeZXV828ipK07It.jpg"></div>
+<div class="hac"><div class="home"><a href="/">Home</a></div> <button class="about">About</button> </div>
+<div class="search">
+    <input id="search-bar" type="text" placeholder="Search C#ShirT" >
+    <button class="cross" onclick="searchBar.value ='';">x</button>
+  <button class="srcBtn"><img src="images/SEARCHICON.jpg" alt=""></button>
+</div>
+
+<div class="cartSec">
+ <button class="cart"> <img class="cartimg" src="images/crt blue.jpg" alt=""></button>
+</div>
+
+</nav>
+<div class="all">
+  
+<div class="shirtB">
+</div>
+
+<div class="hand1"></div>
+<div class="hand2"></div>
+<div class="neck"></div>
+<div class="shape1"></div>
+<div class="shape2"></div>
+<div class="imgBody">
+  <img class="imgC" src="images/panda.png" alt="">
+</div>
+<div class="codesec">
+  <b class="cotext">#BL131</b>
+ <button class="copy" onclick="copy();"> <img src="images/copy.jpg" alt=""></button>
+</div>
+<div class="glry">
+  <div class="a1">
+   <button class="aa" onclick=" ImgC.src ='images/images.png'; desCode = '111' ; Code.innerText = '#' + colorCode + desCode;   copyText.value = Code.innerText; "><img src="images/images.png" alt=""></button>
+   <button class="ab" onclick="ImgC.src ='images/240_F_398219236_3fgvgb5LS4jDfkzajmeZXV828ipK07It.jpg' ;  desCode = '112' ; Code.innerText = '#' + colorCode + desCode; copyText.value = Code.innerText; "><img src="images/240_F_398219236_3fgvgb5LS4jDfkzajmeZXV828ipK07It.jpg" alt=""></button>
+   <button class="ac" onclick="ImgC.src ='images/Screenshot 2024-09-29 122837.jpg' ;  desCode = '113' ;Code.innerText = '#' + colorCode + desCode; copyText.value = Code.innerText; "><img src="images/Screenshot 2024-09-29 122837.jpg" alt=""></button>
+  </div>
+  <div class="a2">
+    <button class="aa" onclick="ImgC.src ='images/d1.jpg' ;  desCode = '121' ; Code.innerText = '#' + colorCode + desCode; copyText.value = Code.innerText; "><img src="images/d1.jpg" alt=""></button>
+    <button class="ab" onclick="ImgC.src ='images/futfute sundor 1.png' ;  desCode = '122' ; Code.innerText = '#' + colorCode + desCode; copyText.value = Code.innerText; "><img src="images/futfute sundor 1.png" alt=""></button>
+    <button class="ac" onclick="ImgC.src ='images/quote-simple-motivational-minimalism-wallpaper-preview.jpg' ;  desCode = '123' ; Code.innerText = '#' + colorCode + desCode; copyText.value = Code.innerText; "><img src="images/quote-simple-motivational-minimalism-wallpaper-preview.jpg" alt=""></button>
+  </div>
+  <div class="a3">
+    <button class="aa" onclick="ImgC.src ='images/panda.png' ;  desCode = '131' ; Code.innerText = '#' + colorCode + desCode; copyText.value = Code.innerText; " ><img src="images/panda.png" alt=""></button>
+    <button class="ab" onclick="ImgC.src ='images/Screenshot_20231105-141118_WhatsApp.png' ;  desCode = '132' ; Code.innerText = '#' + colorCode + desCode; copyText.value = Code.innerText; " ><img src="images/Screenshot_20231105-141118_WhatsApp.png" alt=""></button>
+    <button class="ac" onclick="ImgC.src ='images/Idiots (2).jpg' ;  desCode = '133' ; Code.innerText = '#' + colorCode + desCode; copyText.value = Code.innerText; "><img src="images/Idiots (2).jpg" alt=""></button>
+  </div>
+  <div class="a4">
+    <button class="aa" onclick="ImgC.src ='images/skull.gif' ; desCode = '141' ; Code.innerText = '#' + colorCode + desCode; copyText.value = Code.innerText; " ><img src="images/skull.gif" alt=""></button>
+    <button class="ab" onclick="ImgC.src ='images/d05359d18615041ae6c3993a4b111d3f.jpg' ; desCode = '142' ; Code.innerText = '#' + colorCode + desCode; copyText.value = Code.innerText; " ><img src="images/d05359d18615041ae6c3993a4b111d3f.jpg" alt=""></button>
+    <button class="ac" onclick="ImgC.src ='images/positive.jpg' ; desCode = '143' ; Code.innerText = '#' + colorCode + desCode; copyText.value = Code.innerText; "><img src="images/positive.jpg" alt=""></button>
+  </div>
+
+
+  </div>
+  <div class="a5">
+    <button class="aa" onclick="ImgC.src ='images/pirate-typeface_1284-47241.jpg' ; desCode = '211' ; Code.innerText = '#' + colorCode + desCode; copyText.value = Code.innerText; " ><img src="images/pirate-typeface_1284-47241.jpg" alt=""></button>
+    <button class="ab" onclick="ImgC.src ='images/063b71979f6a36838c2528a5db87ebe7-4431c49ad8c537144bc0ee140a8a110c16693018405482.png' ; desCode = '212' ; Code.innerText = '#' + colorCode + desCode; copyText.value = Code.innerText; " ><img src="images/063b71979f6a36838c2528a5db87ebe7-4431c49ad8c537144bc0ee140a8a110c16693018405482.png" alt=""></button>
+    <button class="ac" onclick="ImgC.src ='images/images (15) (3).jpeg' ; desCode = '213' ; Code.innerText = '#' + colorCode + desCode; copyText.value = Code.innerText; "><img src="images/images (15) (3).jpeg" alt=""></button>
+    <button class="aa" onclick="ImgC.src ='images/images (15) (7).jpeg' ; desCode = '214' ; Code.innerText = '#' + colorCode + desCode; copyText.value = Code.innerText; " ><img src="images/images (15) (7).jpeg" alt=""></button>
+    <button class="ab" onclick="ImgC.src ='images/raf,360x360,075,t,fafafa_ca443f4786.jpg' ; desCode = '215' ; Code.innerText = '#' + colorCode + desCode; copyText.value = Code.innerText; " ><img src="images/raf,360x360,075,t,fafafa_ca443f4786.jpg" alt=""></button>
+    <button class="ac" onclick="ImgC.src ='images/images (15) (4).jpeg' ; desCode = '216' ; Code.innerText = '#' + colorCode + desCode; copyText.value = Code.innerText; "><img src="images/images (15) (4).jpeg" alt=""></button>
+    <button class="aa" onclick="ImgC.src ='images/vintage-gammal-tag-t-shirt-design-klistermaerke.jpg' ; desCode = '217' ; Code.innerText = '#' + colorCode + desCode; copyText.value = Code.innerText; " ><img src="images/vintage-gammal-tag-t-shirt-design-klistermaerke.jpg" alt=""></button>
+    <button class="ab" onclick="ImgC.src ='images/images 99.jpeg' ; desCode = '218' ; Code.innerText = '#' + colorCode + desCode; copyText.value = Code.innerText; " ><img src="images/images 99.jpeg" alt=""></button>
+    <button class="ac" onclick="ImgC.src ='images/images (15) (5).jpeg' ; desCode = '219' ; Code.innerText = '#' + colorCode + desCode; copyText.value = Code.innerText; "><img src="images/images (15) (5).jpeg" alt=""></button>
+    <button class="ac" onclick="ImgC.src ='images/midsld.jpg' ; desCode = '21X' ; Code.innerText = '#' + colorCode + desCode; copyText.value = Code.innerText; "><img src="images/midsld.jpg" alt=""></button>
+  
+ </div>
+<div class="colors">
+  <button class="red" onclick="ReD();">RED</button>
+  <button class="green"  onclick="GrN();">GREEN</button>
+  <button class="navy"  onclick="BlU();">NAVY</button>
+  <button class="white"  onclick="WT();">WHITE</button>
+  <button class="black"  onclick="bLk();">BLACK</button>
+  <button class="brown"  onclick="bRn();">BROWN</button>
+  <button class="gray"  onclick="gRy();">GRAY</button>
+</div>
+
+<!-- added later, input style is in code section -->
+
+<input type="text" value="#BL131" id="inputcode">
+
+
+<div class="bot">
+  Made with &#9829; by <br>Bulbul Ahmed Shashi
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <script>
+const All = document.querySelector('.all');
+const SB = document.querySelector(".shirtB");
+const H1 = document.querySelector('.hand1');
+const H2 = document.querySelector('.hand2');
+const S1 = document.querySelector('.shape1');
+const S2 = document.querySelector('.shape2');
+const Nck = document.querySelector(".neck");
+
+
+let ImgC = document.querySelector('.imgC');
+
+const Code = document.querySelector('.cotext');
+let colorCode = "BL";
+let desCode = '131';
+const searchBar = document.querySelector('#search-bar');
+
+
+
+function ReD(){
+  SB.style.backgroundColor = 'red'
+  SB.style.backgroundColor = 'red'
+  S1.style.backgroundColor = 'red'
+  S2.style.backgroundColor = 'red'
+  H1.style.backgroundColor = 'red'
+  H2.style.backgroundColor = 'red'
+  
+  colorCode ='RD';
+  Code.innerText = "#" + colorCode + desCode;
+  copyText.value = Code.innerText;
+
+  
+
+}
+function GrN(){
+  SB.style.backgroundColor = 'green'
+  SB.style.backgroundColor = 'green'
+  S1.style.backgroundColor = 'green'
+  S2.style.backgroundColor = 'green'
+  H1.style.backgroundColor = 'green'
+  H2.style.backgroundColor = 'green'
+  colorCode = 'GR'
+  Code.innerText = "#" + colorCode + desCode;
+  copyText.value = Code.innerText;
+
+
+
+}
+function BlU(){
+  SB.style.backgroundColor = 'navy'
+  SB.style.backgroundColor = 'navy'
+  S1.style.backgroundColor = 'navy'
+  S2.style.backgroundColor = 'navy'
+  H1.style.backgroundColor = 'navy'
+  H2.style.backgroundColor = 'navy'
+  colorCode = 'NV'
+  Code.innerText = "#" + colorCode + desCode;
+  copyText.value = Code.innerText;
+
+
+}
+function WT(){
+  SB.style.backgroundColor = 'white'
+  SB.style.backgroundColor = 'white'
+  S1.style.backgroundColor = 'white'
+  S2.style.backgroundColor = 'white'
+  H1.style.backgroundColor = 'white'
+  H2.style.backgroundColor = 'white'
+  colorCode = 'WT'
+  Code.innerText = "#" + colorCode + desCode;
+  copyText.value = Code.innerText;
+
+  
+}
+
+function bLk(){
+  SB.style.backgroundColor = 'black'
+  SB.style.backgroundColor = 'black'
+  S1.style.backgroundColor = 'black'
+  S2.style.backgroundColor = 'black'
+  H1.style.backgroundColor = 'black'
+  H2.style.backgroundColor = 'black'
+  colorCode = 'BL'
+  Code.innerText = "#" + colorCode + desCode;
+  copyText.value = Code.innerText;
+
+  
+}
+function bRn(){
+  SB.style.backgroundColor = 'brown'
+  SB.style.backgroundColor = 'brown'
+  S1.style.backgroundColor = 'brown'
+  S2.style.backgroundColor = 'brown'
+  H1.style.backgroundColor = 'brown'
+  H2.style.backgroundColor = 'brown'
+  colorCode = 'BN'
+  Code.innerText = "#" + colorCode + desCode;
+  copyText.value = Code.innerText;
+
+}
+function gRy(){
+  SB.style.backgroundColor = 'gray'
+  SB.style.backgroundColor = 'gray'
+  S1.style.backgroundColor = 'gray'
+  S2.style.backgroundColor = 'gray'
+  H1.style.backgroundColor = 'gray'
+  H2.style.backgroundColor = 'gray'
+  colorCode = 'GY'
+  Code.innerText = "#" + colorCode + desCode;
+  copyText.value = Code.innerText;
+
+  
+}
+const copyText = document.getElementById ('inputcode');
+copyText.value = Code.innerText;
+function copy(){
+
+ copyText.select();
+ copyText.setSelectionRange(0,99999);
+ navigator.clipboard.writeText(copyText.value) ;
+
+
+
+}
+
+  </script>
+</body>
+</html>
